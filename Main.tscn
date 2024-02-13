@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/main.cs" type="Script" id=1]
+[ext_resource path="res://sprites/EdgeColliders.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/Item.tscn" type="PackedScene" id=5]
+[ext_resource path="res://images/textures.tres" type="Texture" id=6]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+textures = ExtResource( 6 )
+NumPerItem = 30
+velocity = 100
+ps = ExtResource( 5 )
+
+[node name="EdgeColliders" parent="." instance=ExtResource( 2 )]
